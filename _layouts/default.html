@@ -7,25 +7,36 @@
     <title>{{ page.title }}</title>
     <meta name="author" content="Douglas Creager" />
 
-    <!-- main CSS -->
-    <link rel="stylesheet" href="/css/main.css" type="text/css" />
+    <!-- compass/blueprint CSS frameworks -->
+    <link
+       rel="stylesheet"
+       href="/css/screen.css"
+       type="text/css"
+       presentation="screen, projection"
+       />
+    <link
+       rel="stylesheet"
+       href="/css/print.css"
+       type="text/css"
+       presentation="print"
+       />
+    <!--[if lt IE 8]>
+    <link
+       rel="stylesheet"
+       href="/css/ie.css"
+       type="text/css"
+       presentation="screen, projection"
+       />
+    <![endif]-->
   </head>
 
   <body>
-    <div class="site">
-      <div class="site_content">
-        <div class="site_header">
-          <img src="/images/kateanddoug.png" />
-        </div>
+    <div class="container">
 
-        <div class="content">
-          <div class="body">
-            {{ content }}
-          </div>
-        </div>
-
+      <div class="content">
+        {{ content }}
       </div>
+
     </div>
   </body>
 </html>
-

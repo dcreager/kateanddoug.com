@@ -1,1 +1,4 @@
 permalink: pretty
+
+exclude:
+  - config.rb
