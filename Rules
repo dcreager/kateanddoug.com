@@ -33,6 +33,11 @@ route '/css/*' do
   item.identifier.chop + '.css'
 end
 
+route '/static/*' do
+  # /static/foo.html/ → /foo.html
+  item.identifier[7..-2]
+end
+
 compile '*' do
   if not item.binary?
     filter :erb
