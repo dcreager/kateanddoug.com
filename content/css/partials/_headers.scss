@@ -1,0 +1,35 @@
+body {
+    #header {
+        @include grid(16,16);
+        height: 80px;
+        border-bottom: $site-border-width solid $site-border-color;
+    }
+
+    #header #date {
+        @include grid(6,16);
+        @include alpha;
+        text-align: right;
+        height: 20px;
+        padding-top: 60px;
+    }
+
+    #header #logo {
+        @include grid(4,16);
+        height: 160px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        background-image: url(/images/heart.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    #header #location {
+        @include grid(6,16);
+        @include omega;
+        text-align: left;
+        height: 20px;
+        padding-top: 60px;
+    }
+}

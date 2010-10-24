@@ -6,6 +6,7 @@
 
 $site-background-color: #f8dada;
 $site-border-color: #fff;
+$site-border-width: 2px;
 
 @include global-reset;
 
@@ -21,36 +22,6 @@ body {
         @include grid-children;
     }
 
-    #header {
-        @include grid(16,16);
-        height: 80px;
-        border-bottom: 2px solid $site-border-color;
-    }
-
-    #header #date {
-        @include grid(6,16);
-        @include alpha;
-        text-align: right;
-        height: 20px;
-        padding-top: 60px;
-    }
-
-    #header #logo {
-        @include grid(4,16);
-        height: 160px;
-        background-image: url(/images/heart.png);
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
-
-    #header #location {
-        @include grid(6,16);
-        @include omega;
-        text-align: left;
-        height: 20px;
-        padding-top: 60px;
-    }
-
     #footer {
     }
 
@@ -60,3 +31,7 @@ body {
         margin-top: 10px;
     }
 }
+
+/*********************************************************************/
+
+@import "partials/headers";
