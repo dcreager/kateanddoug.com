@@ -1,5 +1,0 @@
-permalink: pretty
-
-exclude:
-  - config.rb
-  - Makefile
