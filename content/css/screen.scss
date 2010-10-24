@@ -30,8 +30,8 @@ body {
     }
 
     #body {
-        @include grid-prefix(3,16);
-        @include grid(10,16);
+        @include grid-prefix(4,16);
+        @include grid(8,16);
         margin-top: 48px;
     }
 
@@ -40,8 +40,15 @@ body {
         font-weight: bold;
     }
 
+    h2 {
+        font-size: 120%;
+        font-weight: bold;
+        margin-top: 18px;
+    }
+
     p {
-        margin-top: 6px;
+        margin-top: 12px;
+        text-align: justify;
     }
 }
 
