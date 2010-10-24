@@ -25,8 +25,23 @@ body {
 
     #content {
         @include grid(16,16);
-        border: 1px solid blue;
+        //border: 1px solid blue;
         margin-top: 10px;
+    }
+
+    #body {
+        @include grid-prefix(3,16);
+        @include grid(10,16);
+        margin-top: 48px;
+    }
+
+    h1 {
+        font-size: 140%;
+        font-weight: bold;
+    }
+
+    p {
+        margin-top: 6px;
     }
 }
 
