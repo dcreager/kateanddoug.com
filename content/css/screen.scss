@@ -1,13 +1,46 @@
-// This import applies a global reset to any page that imports this stylesheet.
-@import "blueprint/reset";
+@import "compass/utilities/general/reset";
+@import "compass/utilities/general/clearfix";
+@import "960/grid";
 
-// To configure blueprint, edit the partials/base.sass file.
-@import "partials/base";
+$site-background-color: #f8dada;
+$site-border-color: #fff;
 
-// Import all the default blueprint modules so that we can access their mixins.
-@import "blueprint";
+@include global-reset;
 
-// Combine the partials into a single screen stylesheet.
-@import "partials/page";
-@import "partials/form";
-@import "partials/grid";
+/*********************************************************************/
+
+body {
+    background: $site-background-color;
+
+    #container {
+        @include grid-system(12);
+        @include clearfix;
+        @include grid-children;
+    }
+
+    #header-date {
+        @include grid(7,16);
+        margin-top: 10px;
+        border-bottom: 1px solid $site-border-color;
+    }
+
+    #header-gap {
+        @include grid(2,16);
+        margin-top: 10px;
+    }
+
+    #header-location {
+        @include grid(7,16);
+        margin-top: 10px;
+        border-bottom: 1px solid $site-border-color;
+    }
+
+    #footer {
+    }
+
+    #content {
+        @include grid(16,16);
+        border: 1px solid blue;
+        margin-top: 10px;
+    }
+}

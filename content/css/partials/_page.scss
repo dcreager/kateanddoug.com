@@ -1,9 +1,0 @@
-// Import the non-default scaffolding module to help us get started.
-@import "blueprint/scaffolding";
-
-body {
-    @include blueprint-typography(true);
-    @include blueprint-utilities;
-    @include blueprint-debug;
-    @include blueprint-interaction;
-}

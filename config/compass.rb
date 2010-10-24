@@ -1,3 +1,5 @@
+require 'ninesixty'
+
 http_path    = "/"
 project_path = "."
 css_dir      = "output/css"
