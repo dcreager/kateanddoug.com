@@ -21,17 +21,34 @@ body {
         @include grid-children;
     }
 
-    #header-date {
-        @include grid(6,16);
-        text-align: right;
-        margin-top: 10px;
+    #header {
+        @include grid(16,16);
+        height: 80px;
+        border-bottom: 2px solid $site-border-color;
     }
 
-    #header-location {
-        @include grid-prefix(4,16);
+    #header #date {
         @include grid(6,16);
+        @include alpha;
+        text-align: right;
+        height: 20px;
+        padding-top: 60px;
+    }
+
+    #header #logo {
+        @include grid(4,16);
+        height: 160px;
+        background-image: url(/images/heart.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    #header #location {
+        @include grid(6,16);
+        @include omega;
         text-align: left;
-        margin-top: 10px;
+        height: 20px;
+        padding-top: 60px;
     }
 
     #footer {
