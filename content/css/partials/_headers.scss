@@ -1,8 +1,7 @@
 body {
     #header {
         @include grid(16,16);
-        height: 80px;
-        border-bottom: $site-border-width solid $site-border-color;
+        height: 56px;
     }
 
     #header #date {
@@ -10,7 +9,7 @@ body {
         @include alpha;
         text-align: right;
         height: 20px;
-        padding-top: 60px;
+        padding-top: 36px;
     }
 
     #header #logo {
@@ -30,6 +29,6 @@ body {
         @include omega;
         text-align: left;
         height: 20px;
-        padding-top: 60px;
+        padding-top: 36px;
     }
 }

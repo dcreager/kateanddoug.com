@@ -4,9 +4,7 @@
 
 @import "partials/fonts";
 
-$site-background-color: #f8dada;
-$site-border-color: #fff;
-$site-border-width: 2px;
+$site-background-color: #c2e0f6;
 
 @include global-reset;
 
@@ -35,3 +33,4 @@ body {
 /*********************************************************************/
 
 @import "partials/headers";
+@import "partials/names";
