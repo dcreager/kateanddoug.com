@@ -2,6 +2,7 @@ body {
     #header {
         @include grid(16,16);
         height: 46px;
+        font-family: StMarieThin;
     }
 
     #header #date {
