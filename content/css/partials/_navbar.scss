@@ -5,13 +5,14 @@ $navbar-highlight-color: #ddebf6;
 
 $navbar-padding: 4px;
 $navbar-side-padding: 10px;
+$navbar-side-margin: 6px;
+$navbar-inner-padding: 30px;
 
 body {
     #navbar {
         @include grid(16,16);
         background: $navbar-background-color;
         font-size: 100%;
-        font-weight: bold;
     }
 
     #navbar #left {
@@ -34,11 +35,11 @@ body {
     }
 
     #navbar #left ul {
-        padding-right: 12px;
+        padding-right: $navbar-inner-padding;
     }
 
     #navbar #right ul {
-        padding-left: 12px;
+        padding-left: $navbar-inner-padding;
     }
 
     #navbar ul li {
@@ -49,7 +50,7 @@ body {
     #navbar ul a {
         display: inline-block;
         width: auto;
-        margin: 0;
+        margin: 0 $navbar-side-margin;
         padding: $navbar-padding $navbar-side-padding;
         @include link-colors(black, black);
     }
