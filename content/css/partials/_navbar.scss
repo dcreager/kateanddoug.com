@@ -1,0 +1,60 @@
+@import "compass/utilities/links";
+
+$navbar-background-color: #82b0c9;
+$navbar-highlight-color: #ddebf6;
+
+$navbar-padding: 4px;
+$navbar-side-padding: 10px;
+
+body {
+    #navbar {
+        @include grid(16,16);
+        background: $navbar-background-color;
+        font-size: 100%;
+        font-weight: bold;
+    }
+
+    #navbar #left {
+        @include grid(7,16);
+        @include alpha;
+        text-align: right;
+    }
+
+    #navbar #right {
+        @include grid-prefix(2,16);
+        @include grid(7,16);
+        @include omega;
+        text-align: left;
+    }
+
+    #navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #navbar #left ul {
+        padding-right: 12px;
+    }
+
+    #navbar #right ul {
+        padding-left: 12px;
+    }
+
+    #navbar ul li {
+        display: inline;
+        margin: 0;
+    }
+
+    #navbar ul a {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        padding: $navbar-padding $navbar-side-padding;
+        @include link-colors(black, black);
+    }
+
+    #navbar ul a:hover {
+        background-color: $navbar-highlight-color;
+    }
+}

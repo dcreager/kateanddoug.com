@@ -52,7 +52,12 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 /*********************************************************************/
 
 @import "partials/headers";
 @import "partials/names";
+@import "partials/navbar";

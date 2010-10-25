@@ -1,7 +1,7 @@
 body {
     #header {
         @include grid(16,16);
-        height: 56px;
+        height: 46px;
     }
 
     #header #date {
@@ -9,16 +9,21 @@ body {
         @include alpha;
         text-align: right;
         height: 20px;
-        padding-top: 36px;
+        padding-top: 26px;
     }
 
     #header #logo {
         @include grid(4,16);
-        height: 160px;
+    }
+
+    #header #logo #logo {
         position: relative;
-        left: 0px;
+        left: 30px;
         top: 0px;
         z-index: 2;
+        width: 160px;
+        height: 160px;
+        margin: 0;
         background-image: url(/images/heart.png);
         background-repeat: no-repeat;
         background-position: center top;
@@ -29,6 +34,6 @@ body {
         @include omega;
         text-align: left;
         height: 20px;
-        padding-top: 36px;
+        padding-top: 26px;
     }
 }
