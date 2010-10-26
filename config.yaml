@@ -43,3 +43,7 @@ data_sources:
   -
     type: static
     items_root: /static/
+
+deploy:
+  default:
+    dst: "dcreager.net:kate-and-doug.com"
