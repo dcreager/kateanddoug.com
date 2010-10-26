@@ -15,7 +15,7 @@ body {
     font-family: "Gentium Basic", Gentium, Palatino, Georgia, serif;
 
     #container {
-        @include grid-system(12);
+        @include grid-system(16);
         @include clearfix;
         @include grid-children;
     }
@@ -58,6 +58,7 @@ a {
 
 /*********************************************************************/
 
+@import "partials/about";
 @import "partials/headers";
 @import "partials/names";
 @import "partials/navbar";

@@ -82,11 +82,15 @@
         </div>
       </div>
 
+      <% if not @item[:skip_container] %>
       <div id="content">
         <div id="body">
+      <% end %>
           <%= yield %>
+      <% if not @item[:skip_container] %>
         </div>
       </div>
+      <% end %>
 
       <div id="footer">
       </div>
