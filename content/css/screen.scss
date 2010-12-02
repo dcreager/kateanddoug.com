@@ -32,7 +32,7 @@ body {
     #body {
         @include grid-prefix(4,16);
         @include grid(8,16);
-        margin-top: 48px;
+        margin-top: 36px;
     }
 
     h1 {
@@ -49,6 +49,7 @@ body {
     p {
         margin-top: 12px;
         text-align: justify;
+        line-height: 115%;
     }
 }
 
