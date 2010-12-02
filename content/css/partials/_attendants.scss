@@ -1,3 +1,5 @@
+$attendant-highlight-color: #ddebf6;
+
 body {
     #attendant_header {
         @include grid-prefix(3,16);
@@ -13,17 +15,26 @@ body {
             margin-top: 24px;
         }
 
-        li {
-            margin-top: 12px;
-            margin-left: 12px;
+        ul {
+            margin-top: 6px;
 
-            .name {
-                font-size: 120%;
+            li {
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 12px;
+
+                .name {
+                    font-size: 120%;
+                }
+
+                .relation {
+                    font-style: italic;
+                    margin-top: 2px;
+                }
             }
 
-            .relation {
-                font-style: italic;
-                margin-top: 2px;
+            li:hover {
+                background-color: $attendant-highlight-color;
             }
         }
     }
