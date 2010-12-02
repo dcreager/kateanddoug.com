@@ -12,14 +12,14 @@ body {
         }
 
         .text {
-            @include grid(5,16);
+            @include grid(6,16);
         }
     }
 
     #kate {
         .text {
-            @include grid-prefix(4,16);
-            @include grid(5,16);
+            @include grid-prefix(3,16);
+            @include grid(6,16);
         }
 
         .pic {
