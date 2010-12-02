@@ -1,0 +1,25 @@
+body {
+    #attendant_list {
+        @include grid-prefix(3,16);
+        @include grid(4,16);
+        margin-top: 36px;
+
+        h2 {
+            margin-top: 24px;
+        }
+
+        li {
+            margin-top: 12px;
+            margin-left: 12px;
+
+            .name {
+                font-size: 120%;
+            }
+
+            .relation {
+                font-style: italic;
+                margin-top: 2px;
+            }
+        }
+    }
+}
