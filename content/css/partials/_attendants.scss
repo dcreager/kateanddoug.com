@@ -1,8 +1,13 @@
 body {
+    #attendant_header {
+        @include grid-prefix(3,16);
+        @include grid(13,16);
+        margin-top: 36px;
+    }
+
     #attendant_list {
         @include grid-prefix(3,16);
         @include grid(4,16);
-        margin-top: 36px;
 
         h2 {
             margin-top: 24px;
@@ -19,6 +24,19 @@ body {
             .relation {
                 font-style: italic;
                 margin-top: 2px;
+            }
+        }
+    }
+
+    #attendant_detail {
+        @include grid(6,16);
+        margin-top: 24px;
+
+        .pic {
+            text-align: center;
+
+            img {
+                border: 1px solid black;
             }
         }
     }
