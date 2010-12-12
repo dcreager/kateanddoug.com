@@ -1,5 +1,6 @@
 @import "compass/utilities/general/reset";
 @import "compass/utilities/general/clearfix";
+@import "compass/utilities/links";
 @import "960/grid";
 
 @import "partials/fonts";
@@ -54,7 +55,8 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    @include link-colors(#a40802, #f02311);
 }
 
 /*********************************************************************/

@@ -48,6 +48,7 @@ body {
     }
 
     #navbar ul a {
+        text-decoration: none;
         display: inline-block;
         width: auto;
         margin: 0 $navbar-side-margin;
