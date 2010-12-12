@@ -1,0 +1,23 @@
+body {
+    #lodging {
+        #constitution {
+            @include grid-prefix(1,16);
+            @include grid(6,16);
+        }
+
+        #residence {
+            @include grid-prefix(2,16);
+            @include grid(6,16);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .address {
+            text-align: center;
+            margin-top: 2px;
+        }
+    }
+}
