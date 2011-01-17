@@ -5,7 +5,7 @@ body {
         .pic {
             @include grid-prefix(1,16);
             @include grid(8,16);
-            text-align: right;
+            text-align: left;
 
             img {
                 border: 1px solid black;
@@ -23,14 +23,13 @@ body {
 
     #propose {
         .text {
-            @include grid-prefix(4,16);
+            @include grid-prefix(1,16);
             @include grid(8,16);
         }
 
         .pic {
-            @include grid(4,16);
+            @include grid(6,16);
             text-align: right;
-            margin-top: 34px;
 
             img {
                 border: 1px solid black;
