@@ -1,0 +1,11 @@
+body {
+    #front_pic {
+        @include grid(16,16);
+        margin-top: 42px;
+        text-align: center;
+
+        img {
+            border: 1px solid #000;
+        }
+    }
+}
