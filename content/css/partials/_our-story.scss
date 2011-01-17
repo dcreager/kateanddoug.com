@@ -1,0 +1,40 @@
+body {
+    #meet {
+        margin-top: 48px;
+
+        .pic {
+            @include grid-prefix(1,16);
+            @include grid(8,16);
+            text-align: right;
+
+            img {
+                border: 1px solid black;
+            }
+        }
+
+        .text {
+            @include grid(6,16);
+
+            h2 {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    #propose {
+        .text {
+            @include grid-prefix(4,16);
+            @include grid(8,16);
+        }
+
+        .pic {
+            @include grid(4,16);
+            text-align: right;
+            margin-top: 34px;
+
+            img {
+                border: 1px solid black;
+            }
+        }
+    }
+}
