@@ -52,6 +52,19 @@ body {
         text-align: justify;
         line-height: 115%;
     }
+
+    dl {
+        margin-top: 12px;
+
+        dt {
+            margin-top: 9px;
+            margin-left: 24px;
+        }
+
+        dd {
+            margin-left: 48px;
+        }
+    }
 }
 
 a {
