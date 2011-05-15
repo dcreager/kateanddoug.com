@@ -1,0 +1,24 @@
+body {
+  #travel_header {
+    @include grid-prefix(2,16);
+    @include grid(14,16);
+    margin-top: 36px;
+  }
+
+  #travel_left {
+    @include grid-prefix(2,16);
+    @include grid(6,16);
+
+    h2 {
+      margin-top: 24px;
+    }
+  }
+
+  #travel_right {
+    @include grid(6,16);
+
+    h2 {
+      margin-top: 24px;
+    }
+  }
+}
