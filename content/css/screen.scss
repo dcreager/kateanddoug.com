@@ -72,6 +72,10 @@ a {
     @include link-colors(#a40802, #f02311);
 }
 
+img.email {
+    margin-bottom: -7px;
+}
+
 /*********************************************************************/
 
 @import "partials/about";

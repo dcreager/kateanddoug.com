@@ -21,4 +21,10 @@ body {
       margin-top: 24px;
     }
   }
+
+  #travel_footer {
+    @include grid-prefix(4,16);
+    @include grid(8,16);
+    margin-top: 36px;
+  }
 }
